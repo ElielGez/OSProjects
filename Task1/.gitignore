@@ -1,5 +1,7 @@
 *
+!*/
 !*.c
 !*.h
+!tools_log/*
 !.gitignore
 !makefile

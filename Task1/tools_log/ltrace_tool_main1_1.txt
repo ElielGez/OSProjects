@@ -1,0 +1,2 @@
+puts("hello Ariel")                              = 12
++++ exited (status 0) +++

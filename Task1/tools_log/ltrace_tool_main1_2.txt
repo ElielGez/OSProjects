@@ -1,0 +1,2 @@
+printHello(1, 0x7ffe4bfae578, 0x7ffe4bfae588, 0x55799386a730) = 12
++++ exited (status 0) +++
