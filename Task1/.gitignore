@@ -2,6 +2,6 @@
 !*/
 !*.c
 !*.h
-!tools_log/*
+!partA/tools_log/*
 !.gitignore
 !makefile
