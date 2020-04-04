@@ -24,11 +24,11 @@ int main(void){
 
 	if((chdir("/")) < 0) exit(EXIT_FAILURE);
 
-	/*
+	
 	close(STDIN_FILENO);
 	close(STDOUT_FILENO);
 	close(STDERR_FILENO);
-	*/
+	
 
 	while(1){
 		printf("I am a deamon process ... \n");
