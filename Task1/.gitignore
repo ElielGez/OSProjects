@@ -3,5 +3,6 @@
 !*.c
 !*.h
 !part_a/tools_log/*
+!part_b/pstree_screenshot.JPG
 !.gitignore
 !makefile
