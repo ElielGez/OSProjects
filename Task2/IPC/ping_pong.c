@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <signal.h>
+#include <sys/wait.h>
 
 #define STOP_NUMBER 5
 
@@ -66,7 +67,9 @@ int main()
         return -1;
     }
 
+//    printf("%d\n", getpid());
     pid_t pid = fork();
+//    printf("%d\n", getpid());
     id = pid;
 
     if(pid == 0) {
@@ -88,7 +91,9 @@ int main()
         
         WAIT_FIRST_SIGNAL = 1;
         while (WAIT_FIRST_SIGNAL);
-
+        
+        printf("sleep of 5 seconds to check the command: cat /proc/%d/status | grep SigCgt\n",pid);
+        sleep(5);
         printf("Child is terminated...\n");
         printf("Parent is terminated... \n");       
 
