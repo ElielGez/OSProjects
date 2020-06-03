@@ -1,16 +1,7 @@
 /*
  * 2_1_1.c
  *
- *  Created on: 25 May 2020
- *      Author: zohar
- *
- *  to make this program have dead lock,
- *  i cancelled the line"sem_post(&S[phnum])", so i wont
- *  wake other phil's after done eating and then everyone will wait
- *  forever, and we have deadlock.when 2 different phils eating,
- *  all forks catched and they wont notify the others to tell them
- *  they done eating.
- *
+ * The comment on line "sem_post(&S[phnum])" will not send semaphore to other phil's after done eating , then everyone wait forever and we get deadlock . (when 2 phils are eating , all forks catched and because I comment the line above , they wont notify that they done eating).
  */
 
 #include <pthread.h>
