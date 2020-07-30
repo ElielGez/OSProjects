@@ -34,7 +34,6 @@
      static char mbuf[10240000]; /* 10.Uninitialized data segment */
      char *p;                    /* 11.Allocated in frame(scope) for main() */
  
-     p = malloc(1024);           /* 12.Points to memory in heap segment */
  
      doCalc(key);
  
