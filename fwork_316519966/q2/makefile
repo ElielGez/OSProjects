@@ -15,6 +15,6 @@ client: client.c
 .PHONY: clean all
 
 clean:
-	rm -f *.o check_pid server
+	rm -f *.o check_pid server client
 
 
