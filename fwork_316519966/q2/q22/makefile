@@ -1,10 +1,7 @@
 CC=gcc
 FLAGS= -Wall -g -fPIC
 
-all: check_pid server client
-
-check_pid: check_pid.c
-	$(CC) $(FLAGS) -o check_pid check_pid.c
+all: server client
 
 server: server.c
 	$(CC) $(FLAGS) -o server server.c
@@ -15,6 +12,6 @@ client: client.c
 .PHONY: clean all
 
 clean:
-	rm -f *.o check_pid server client
+	rm -f *.o server client
 
 
