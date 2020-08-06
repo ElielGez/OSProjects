@@ -25,5 +25,5 @@
 
   - navigate to the directory of q3 in terminal
   - run `make all`
-  - run `./set_policy <number of policy from the list above> <number of priority>` // to see valid priorities to each policy please run first `chrt -m`
+  - run `sudo ./set_policy <number of policy from the list above> <number of priority>` // to see valid priorities to each policy please run first `chrt -m`
   - if you want to check process policy and priority , please run `chrt -p <pid>`
