@@ -27,3 +27,10 @@
   - run `make all`
   - run `sudo ./set_policy <number of policy from the list above> <number of priority>` // to see valid priorities to each policy please run first `chrt -m`
   - if you want to check process policy and priority , please run `chrt -p <pid>`
+  
+### q4: 
+  - navigate to the directory of q4 in terminal
+  - run `make all`
+  - run `./dir_traversal dir` and see the output of the current directory calls 'dir'
+  - if you want to run the program on other directory just run `./dir_traversal <path to dir>`
+  
